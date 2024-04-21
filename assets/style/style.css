@@ -86,3 +86,43 @@ body {
     border: none;
     cursor: pointer;
 }
+
+.second-section {
+    background: var(--very-dark-blue);
+
+    padding: 1.5rem 1.1rem;
+
+    margin-bottom: 4rem;
+}
+
+.line-distance{
+    border-bottom: 1px solid var(--grayish-blue);
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.75rem;
+}
+
+.second-section h2 {
+    color: var(--soft-orange);
+
+    font-size: 2rem;
+    line-height: 100%;
+
+    margin-bottom: 2rem;
+}
+
+.second-section h3 {
+    color: var(--off-white);
+
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+
+    margin-bottom: 0.5rem;
+}
+
+.second-section p {
+    color: var(--grayish-blue);
+
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
+}
