@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* -- primary colors -- */
+    --soft-orange: #E9AB53;
+    --soft-red: #F15E50;
+    
+    /* -- neutral colors -- */
+    --off-white: #FFFDFA;
+    --grayish-blue: #C5C6CE;
+    --dark-grayish-blue: #5D5F79;
+    --very-dark-blue: #00001A;
+}
+
+body {
+    background: var(--off-white);
+
+    padding: 1.75rem 1rem;
+}
+
+.header-mobile {
+    
+}
