@@ -1,3 +1,5 @@
+/* -- font -- */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
@@ -31,7 +33,9 @@ body {
     padding: 1.75rem 1rem;
 }
 
-body.menu-open:before {
+    /* -- add before for color behind nav mobile -- */
+
+body.dark:before {
     content: "";
     background: rgba(0, 0, 26, 0.5);
 
@@ -42,6 +46,8 @@ body.menu-open:before {
     height: 100vh;
     width: 100%;
 }
+
+    /* -- stylization of header -- */
 
 .header-mobile {
     display: flex;
@@ -58,11 +64,13 @@ body.menu-open:before {
     width: fit-content;
 }
 
+/* -- stylization of nav (pops up w js) -- */
+
 .header-mobile nav {
     background-color: var(--off-white);
 
     position: fixed;
-    right: 0;
+    right: -16rem;
     top: 0;
     height: 100vh;
     width: 16rem;
@@ -75,7 +83,11 @@ body.menu-open:before {
     padding: 1.5rem;
     gap: 1.5rem;
 
-    display: none;
+    transition: 0.5s;
+}
+
+.header-mobile nav.open {
+    right: 0;
 }
 
 .header-mobile nav a {
@@ -92,6 +104,8 @@ body.menu-open:before {
 
     margin-bottom: 4rem;
 }
+
+/* -- the sections stylization -- */
 
 .first-section {
     margin-bottom: 4rem;
@@ -136,6 +150,8 @@ body.menu-open:before {
     cursor: pointer;
 }
 
+/* -- 2nd sec -- */
+
 .second-section {
     background: var(--very-dark-blue);
 
@@ -175,6 +191,8 @@ body.menu-open:before {
     font-size: 0.9375rem;
     line-height: 1.625rem;
 }
+
+/* -- 3rd sec -- */
 
 .third-section > div {
     display: flex;
