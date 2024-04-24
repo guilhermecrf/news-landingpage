@@ -19,16 +19,24 @@
     <script defer src="/js/script.js"></script>
 </head>
 <body>
-    <header class="header-mobile">
+    <header>
         <img src="/assets/images/logo.svg" alt="uma logo de notícias.">
         <button>
             <img src="/assets/images/icon-menu.svg" alt="ícone do menu.">
         </button>
 
-        <nav>
+        <nav class="mobile">
             <button>
                 <img src="/assets/images/icon-menu-close.svg" alt="icon close menu">
             </button>
+            <a href="#">Home</a>
+            <a href="#">Novo</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categorias</a>
+        </nav>
+
+        <nav class="desk">
             <a href="#">Home</a>
             <a href="#">Novo</a>
             <a href="#">Popular</a>
@@ -39,7 +47,10 @@
 
     <main>
         <section class="first-section">
-            <img src="/assets/images/image-web-3-mobile.jpg" alt="íconde de puzzle">
+            <picture>
+                <source media="(min-width: 700px)" srcset="/assets/images/image-web-3-desktop.jpg">
+                <img src="/assets/images/image-web-3-mobile.jpg" alt="íconde de puzzle">
+            </picture>
             <h1>O futuro brilhante da Web 3.0?</h1>
             <p>
                 Nós mergulhamos na próxima evolução da web que afirma devolver o poder das 
