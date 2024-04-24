@@ -95,7 +95,7 @@ body {
     margin-bottom: 4rem;
 }
 
-.line-distance{
+.line-distance {
     border-bottom: 1px solid var(--grayish-blue);
     margin-bottom: 1.75rem;
     padding-bottom: 1.75rem;
@@ -122,6 +122,40 @@ body {
 
 .second-section p {
     color: var(--grayish-blue);
+
+    font-size: 0.9375rem;
+    line-height: 1.625rem;
+}
+
+.third-section > div {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.third-section img {
+    max-width: 6.25rem;
+}
+
+.third-section strong {
+    color: var(--grayish-blue);
+
+    font-size: 2rem;
+    line-height: 100%;
+}
+.third-section h2 {
+    color: var(--very-dark-blue);
+
+    font-size: 1.125rem;
+    font-weight: 800;
+    line-height: 1.5rem;
+
+    margin-block: 0.6rem;
+}
+
+.third-section p {
+    color: var(--dark-grayish-blue);
 
     font-size: 0.9375rem;
     line-height: 1.625rem;
