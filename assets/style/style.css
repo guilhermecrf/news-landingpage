@@ -65,6 +65,8 @@ header button {
     background: none;
 
     width: fit-content;
+
+    cursor: pointer;
 }
 
 /* -- stylization of nav (pops up w js) -- */
@@ -106,6 +108,10 @@ header nav button {
     align-self: flex-end;
 
     margin-bottom: 4rem;    
+}
+
+header .desk {
+    display: none;
 }
 
 /* -- main responsiveness -- */
@@ -231,6 +237,10 @@ main {
     margin-block: 0.6rem;
 }
 
+.third-section a {
+    text-decoration: none;
+}
+
 .third-section p {
     color: var(--dark-grayish-blue);
 
@@ -241,6 +251,27 @@ main {
 /* -- responsiveness / media -- */
 
 @media(min-width: 1110px) {
+    header > button {
+        display: none;
+    }
+
+    header .desk {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    header .desk a {
+        color: var(--dark-grayish-blue);
+
+        font-size: 0.9375rem;
+        line-height: 1.625rem;
+        text-decoration: none;
+    }
+
+    header .desk a:hover {
+        color: var(--soft-red);
+    }
+
     main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -267,24 +298,23 @@ main {
         font-size: 3.5rem;
     }
 
+    .first-section button:hover {
+        background-color: var(--very-dark-blue);
+        cursor: pointer;
+        
+        transition: 0.3s;
+    }
+
     .second-section h2 {
         font-size: 2.5rem;
     }
 
-    header > button {
-        display: none;
-    }
-
-    header .desk {
+    .third-section {
         display: flex;
-        gap: 2.5rem;
+        grid-column: 1 / 4;
     }
 
-    header .desk a {
-        color: var(--dark-grayish-blue);
-
-        font-size: 0.9375rem;
-        line-height: 1.625rem;
-        text-decoration: none;
+    .third-section h2:hover {
+        color: var(--soft-red);
     }
 }
