@@ -31,6 +31,18 @@ body {
     padding: 1.75rem 1rem;
 }
 
+body.menu-open:before {
+    content: "";
+    background: rgba(0, 0, 26, 0.5);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 100vh;
+    width: 100%;
+}
+
 .header-mobile {
     display: flex;
     justify-content: space-between;
@@ -42,6 +54,43 @@ body {
 .header-mobile button {
     border: none;
     background: none;
+
+    width: fit-content;
+}
+
+.header-mobile nav {
+    background-color: var(--off-white);
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 16rem;
+
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1.5rem;
+    gap: 1.5rem;
+
+    display: none;
+}
+
+.header-mobile nav a {
+    color: var(--very-dark-blue);
+
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+
+    text-decoration: none;
+}
+
+.header-mobile nav button {
+    align-self: flex-end;
+
+    margin-bottom: 4rem;
 }
 
 .first-section {
